@@ -1,0 +1,49 @@
+#include <stdio.h>
+
+int main()
+{
+    // Fundamental data types
+    char charType;       // 1-바이트 캐릭터 타입
+    int integerType;     // 4바이트 정수형
+    float floatType;     // 4바이트 부동 소수점 유형
+    double doubleType;   // 8바이트 부동 소수점 유형
+
+    printf("Fundamental data types:\n");
+    printf("Size of char: %ld byte\n", sizeof(charType));          // size of operator는 바이트 단위로 변수의 크기를 반환합니다
+    printf("Size of int: %ld bytes\n", sizeof(integerType));
+    printf("Size of float: %ld bytes\n", sizeof(floatType));
+    printf("Size of double: %ld bytes\n", sizeof(doubleType));
+    printf("-----------------------------------------\n");
+
+    // Additional data types
+    short shortType;               // 2바이트 정수형
+    long longType;                 // 4바이트 또는 8바이트 정수 유형(플랫폼에 따라 다름)
+    long long longLongType;        // 8바이트 정수형
+    unsigned int unsignedIntType;  // 4바이트 부호 없는 정수 유형
+    signed int signedIntType;      // 4바이트 부호 있는 정수 유형
+    long double longDoubleType;    //8바이트 또는 16바이트 부동 소수점 유형(플랫폼에 따라 다름)
+
+    printf("Additional data types:\n");
+    printf("Size of short: %ld bytes\n", sizeof(shortType));
+    printf("Size of long: %ld bytes\n", sizeof(longType));
+    printf("Size of long long: %ld bytes\n", sizeof(longLongType));
+    printf("Size of unsigned int: %ld bytes\n", sizeof(unsignedIntType));
+    printf("Size of signed int: %ld bytes\n", sizeof(signedIntType));
+    printf("Size of long double: %ld bytes\n", sizeof(longDoubleType));
+    printf("-----------------------------------------\n");
+
+    // Pointer data types
+    char* charPtr;      // 캐릭터로 포인터
+    int* intPtr;        // 정수에 대한 포인터
+    float* floatPtr;    // 플로트에 대한 포인터
+    double* doublePtr;  // 2루타를 가리키다
+    printf("Pointer data types:\n");
+    printf("Size of char*: %ld bytes\n", sizeof(charPtr));
+    printf("Size of int*: %ld bytes\n", sizeof(intPtr));
+    printf("Size of float*: %ld bytes\n", sizeof(floatPtr));
+    printf("Size of double*: %ld bytes\n", sizeof(doublePtr));
+    printf("-----------------------------------------\n");
+    printf("2020039090 MAGUOHAO"
+    return 0;
+}
+//코드는 여러 기본 데이터 유형, 추가 데이터 유형 및 포인터 데이터 유형을 정의하고 sizeof 연산자를 사용하여 메모리에서 차지하는 바이트 수를 출력합니다.주석은 각 데이터 유형의 역할과 차지하는 바이트 수를 설명합니다.
