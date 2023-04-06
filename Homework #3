@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void)
+{
+int list[5]; // Declare an integer array with 5 elements
+int *plist[5] = { NULL }; // Declare an array of 5 integer pointers and initialize them to NULL
+plist[0] = (int *)malloc(sizeof(int)); // Allocate memory for an integer and assign the address to the first element of the pointer array
+list[0] = 1; // Assign 1 to the first element of the integer array
+list[1] = 100; // Assign 100 to the second element of the integer array
+*plist[0] = 200; // Assign 200 to the integer pointed by the first element of the pointer array
+
+printf("list[0] = %d\n", list[0]); // Print the value of the first element of the integer array
+printf("&list[0] = %p\n", &list[0]); // Print the address of the first element of the integer array
+printf("list = %p\n", list); // Print the address of the integer array
+printf("&list = %p\n", &list); // Print the address of the integer array pointer
+printf("----------------------------------------\n\n");
+printf("list[1] = %d\n", list[1]); // Print the value of the second element of the integer array
+printf("&list[1] = %p\n", &list[1]); // Print the address of the second element of the integer array
+printf("*(list+1) = %d\n", *(list + 1)); // Print the value of the second element of the integer array using pointer arithmetic
+printf("list+1 = %p\n", list+1); // Print the address of the second element of the integer array using pointer arithmetic
+printf("----------------------------------------\n\n");
+printf("*plist[0] = %d\n", *plist[0]); // Print the value of the integer pointed by the first element of the pointer array
+printf("&plist[0] = %p\n", &plist[0]); // Print the address of the first element of the pointer array
+printf("&plist = %p\n", &plist); // Print the address of the pointer array
+printf("plist = %p\n", plist); // Print the address of the pointer array
+printf("plist[0] = %p\n", plist[0]); // Print the value of the first element of the pointer array
+printf("plist[1] = %p\n", plist[1]); // Print the value of the second element of the pointer array
+printf("plist[2] = %p\n", plist[2]); // Print the value of the third element of the pointer array
+printf("plist[3] = %p\n", plist[3]); // Print the value of the fourth element of the pointer array
+printf("plist[4] = %p\n", plist[4]); // Print the value of the fifth element of the pointer array
+printf("MAGUOHAO 2020039090");
+
+free(plist[0]); // Free the memory allocated for the integer pointed by the first element of the pointer array
+
+return 0;
+}
